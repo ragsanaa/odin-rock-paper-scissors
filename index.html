@@ -4,11 +4,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Rock-Paper-Scissors</title>
 </head>
 
 <body>
-  <script src="script.js"></script>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div id="pop-up" class="choices">
+      <h2>Choose</h2>
+      <div id="rock" class="choice">
+        <img src="assets/images/rock.png" alt="rock">
+      </div>
+      <div id="paper" class="choice">
+        <img src="assets/images/paper.png" alt="paper">
+      </div>
+      <div id="scissors" class="choice">
+        <img src="assets/images/scissors.png" alt="scissors">
+      </div>
+    </div>
+    <br>
+    <input type="number" name="round" id="round-count" min="0" max="100">
+    <button class="play-btn">Play a Game</button>
+    <br>
+    <div class="playground">
+      <h2>Round <span class="round">1</span></h2>
+      <div class="players">
+        <div class="human">
+          <h2>Human</h2>
+          <div id="human-choice" class="choice">
+            <img src="assets/images/question.png" alt="human_choice" id="human">
+          </div>
+        </div>
+        <h1>VS</h1>
+        <div class="computer">
+          <h2>Computer</h2>
+          <div id="computer-choice" class="choice">
+            <img src="assets/images/question.png" alt="computer_choice" id="computer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="result">
+      <h2>Score</h2>
+      <i class="message"></i>
+      <div class="scores">
+        <div class="human score">
+          <h2>Human</h2>
+          <h2 id="human-score">0</h2>
+        </div>
+        <div class="computer score">
+          <h2>Computer</h2>
+          <h2 id="computer-score">0</h2>
+        </div>
+      </div>
+      <script src="script.js"></script>
 </body>
 
 </html>
